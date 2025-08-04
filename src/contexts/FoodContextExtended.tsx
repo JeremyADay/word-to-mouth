@@ -1,0 +1,95 @@
+// Additional mock data for FoodContext (part 2 of 12 items)
+import { FoodItem } from '@/types/food';
+import { getCategoryImage } from '@/lib/categoryImages';
+export const additionalMockItems: FoodItem[] = [
+  {
+    id: '7',
+    dishName: 'Korean BBQ Bowl',
+    restaurantName: 'Kogi BBQ',
+    description: 'bulgogi beef, extra kimchi, spicy gochujang sauce',
+    location: { lat: 34.0522, lng: -118.2437, address: 'Los Angeles, CA' },
+    imageUrl: getCategoryImage('Bowls'),
+    tags: ['Tastes spicy', 'Must try'],
+    category: 'Bowls',
+    parkingTips: 'food truck - street parking',
+    reactions: { wantToTry: 14, liked: 11, overrated: 1, weird: 3 },
+    isSaved: false,
+    createdAt: new Date('2024-01-09'),
+    userId: 'user7'
+  },
+  {
+    id: '8',
+    dishName: 'Pepperoni Pizza',
+    restaurantName: 'Tony\'s Little Star',
+    description: 'ask for extra cheese and garlic oil drizzle',
+    location: { lat: 32.7157, lng: -117.1611, address: 'San Diego, CA' },
+    imageUrl: getCategoryImage('Pizza'),
+    tags: ['Off-menu hack'],
+    category: 'Pizza',
+    parkingTips: '',
+    reactions: { wantToTry: 7, liked: 13, overrated: 5, weird: 0 },
+    isSaved: false,
+    createdAt: new Date('2024-01-08'),
+    userId: 'user8'
+  },
+  {
+    id: '9',
+    dishName: 'Chicken & Waffles',
+    restaurantName: 'Roscoe\'s House of Chicken',
+    description: 'extra crispy chicken, maple syrup on the side',
+    location: { lat: 34.0522, lng: -118.2437, address: 'Los Angeles, CA' },
+    imageUrl: getCategoryImage('Brunch'),
+    tags: ['Must try', 'Hidden gem'],
+    category: 'Brunch',
+    parkingTips: 'limited street parking, arrive early',
+    reactions: { wantToTry: 18, liked: 22, overrated: 2, weird: 1 },
+    isSaved: true,
+    createdAt: new Date('2024-01-07'),
+    userId: 'user9'
+  },
+  {
+    id: '10',
+    dishName: 'Ramen Bowl',
+    restaurantName: 'Ramen Tatsu-Ya',
+    description: 'tonkotsu broth, extra chashu pork, soft boiled egg',
+    location: { lat: 30.2672, lng: -97.7431, address: 'Austin, TX' },
+    imageUrl: getCategoryImage('Bowls'),
+    tags: ['Must try'],
+    category: 'Bowls',
+    parkingTips: 'shared lot with other restaurants',
+    reactions: { wantToTry: 9, liked: 17, overrated: 0, weird: 2 },
+    isSaved: false,
+    createdAt: new Date('2024-01-06'),
+    userId: 'user10'
+  },
+  {
+    id: '11',
+    dishName: 'Deep Dish Pizza',
+    restaurantName: 'Lou Malnati\'s',
+    description: 'extra sausage, light sauce, well done crust',
+    location: { lat: 41.8781, lng: -87.6298, address: 'Chicago, IL' },
+    imageUrl: getCategoryImage('Pizza'),
+    tags: ['Hidden gem'],
+    category: 'Pizza',
+    parkingTips: 'valet parking available',
+    reactions: { wantToTry: 5, liked: 8, overrated: 7, weird: 4 },
+    isSaved: true,
+    createdAt: new Date('2024-01-05'),
+    userId: 'user11'
+  },
+  {
+    id: '12',
+    dishName: 'Tiramisu',
+    restaurantName: 'Osteria Mozza',
+    description: 'ask for extra cocoa powder dusting',
+    location: { lat: 34.0522, lng: -118.2437, address: 'Los Angeles, CA' },
+    imageUrl: getCategoryImage('Dessert'),
+    tags: ['Off-menu hack'],
+    category: 'Dessert',
+    parkingTips: 'valet only, $12',
+    reactions: { wantToTry: 11, liked: 19, overrated: 1, weird: 0 },
+    isSaved: false,
+    createdAt: new Date('2024-01-04'),
+    userId: 'user12'
+  }
+];
