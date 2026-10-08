@@ -1,3 +1,16 @@
-# React + TypeScript + Vite
+# Word to Mouth
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A mobile-first app for sharing specific dishes, food hacks and recommendations, inspired by word-of-mouth food tips and local finds.
+
+Status: early prototype.
+
+## Built with
+
+React, TypeScript, Vite, Tailwind CSS and shadcn/ui.
+
+## Running it locally
+
+```sh
+npm install
+npm run dev
+```
